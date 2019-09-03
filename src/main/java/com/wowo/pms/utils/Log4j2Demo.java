@@ -11,7 +11,5 @@ public class Log4j2Demo {
         logger.info("this is a info...");
         logger.warn("this is a warning...");
         logger.error("this  is  a error ...");
-
-
     }
 }
