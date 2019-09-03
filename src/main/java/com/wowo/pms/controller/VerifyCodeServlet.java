@@ -104,4 +104,5 @@ public class VerifyCodeServlet extends HttpServlet {
 		return new Color(r, g, b);
 	}
 
+
 }
