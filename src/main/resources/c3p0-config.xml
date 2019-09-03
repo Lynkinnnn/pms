@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<c3p0-config>
+  <default-config>   
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="jdbcUrl">jdbc:mysql://101.132.72.107:3306/pms?characterEncoding=utf8</property>
+    <property name="user">root</property>
+    <property name="password">0717</property>
+ 	<!-- 初始时创建的联接对象个数 -->
+    <property name="initialPoolSize">10</property>
+    <!-- 最大空闲时间，单位为秒 -->
+    <property name="maxIdleTime">30</property>
+    <!-- 最大联接对象个数 -->
+    <property name="maxPoolSize">100</property>
+    <!-- 最小联接对象个数 -->
+    <property name="minPoolSize">10</property>
+    <!-- 如果连接池连接已经用完了，每次增加多少个连接 -->
+    <property name="acquireIncrement">4</property>
+  </default-config>
+ 
+  <named-config name="mySource">
+    <property name="driverClass">com.mysql.jdbc.Driver</property>
+    <property name="jdbcUrl">jdbc:mysql://101.132.72.107:3306/pms</property>
+    <property name="user">root</property>
+    <property name="password">0717</property>
+ 
+    <property name="initialPoolSize">10</property>
+    <property name="maxIdleTime">30</property>
+    <property name="maxPoolSize">100</property>
+    <property name="minPoolSize">10</property>
+  </named-config>
+</c3p0-config>
